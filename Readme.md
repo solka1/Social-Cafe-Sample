@@ -20,5 +20,8 @@ In addition, please make sure that you're created the following objects and acti
 You can use the Debug tab in the Developer tab to make sure you've set up the objects correctly.
 
 
-Once you have taken these steps, enter your Facebook app ID and secret in products.php. Also enter the URLs for the objects you created. Finally, edit earlgrey.php, icedmocha.php and latte.php and edit the Open Graph metadata tags to use your namespace and object URls.
- 
+Once you have taken these steps, enter your Facebook app ID and secret in products.php and edit the following files to edit the Open Graph meta tags to use your namespace and object URIs:
+
+ * earlgrey.php
+ * icedmocha.php
+ * latte.php
