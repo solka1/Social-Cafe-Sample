@@ -19,7 +19,7 @@
 
   function publishCustomAction($facebook, $product) {
     global $app_namespace;
-      $ret_obj = $facebook->api('/me/'.$app_namespace.':drink', 'post', array(
+      $ret_obj = $facebook->api('/me/'.$app_namespace.':order', 'post', array(
                         'beverage' => $product['url'],
                       ));
       return $ret_obj['id'];
