@@ -21,10 +21,12 @@
 ?>
 <head prefix="og: http://ogp.me/ns# social-cafe: http://ogp.me/ns/apps/social-cafe#">
     <title>Iced Mocha Coffee</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <meta property="og:title" content="Iced Mocha" />
       <meta property="og:determiner" content="an" />
       <meta property="fb:app_id" content="<?php echo $app_id; ?>" />
-      <meta property="og:image" content="<?php echo $app_url; ?>/img/kyoto_sq.gif" />
+      <meta property="og:description" content="Cold and refreshing" />
+      <meta property="og:image" content="<?php echo $app_url; ?>/img/mocha2x.png" />
       <meta property="og:url" content="<?php echo $app_url; ?>/icedmocha.php" />
       <meta property="og:type" content="<?php echo $app_namespace; ?>:beverage" />
       <meta property="<?php echo $app_namespace; ?>:category" content="<?php echo $app_url; ?>/types/coffee.php"> 
@@ -35,7 +37,7 @@
   <body>
 
   <div class="header" > 
-    <h1><a href="<?php echo $app_url; ?>"><img src="img/cafe.jpg" width="135px" height="100px" /> Social Cafe</a></h1>
+    <h1><a href="<?php echo $app_url; ?>"><img class="logo" src="img/cafe.png" width="135px" height="100px" /> Social Cafe</a></h1>
     <div class="controls"><a href="<?php echo $facebook->getLoginUrl( array( 'scope' => 'publish_actions') ); ?>">Login</a> <a href="<?php echo $facebook->getLogoutUrl(); ?>">Logout</a></div>
   </div>
 
@@ -57,7 +59,7 @@
       </div>
 
   	  <div class="item">
-  		<a href="javascript:document.forms[0].submit();"><img src="img/kyoto.gif" width="70px" /> Iced Mocha </a>
+  		<a href="javascript:document.forms[0].submit();"><img src="img/mocha.png" width="70px" /> Iced Mocha </a>
   	  </div>
   
        <br />

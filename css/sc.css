@@ -4,10 +4,9 @@
 
      body {
           position: relative;
-/*        background-color: rgb(223,188,154); */
           background-color: #FFFFFF;
           margin:0;
-          font-family: "Handwriting - Dakota", "Gabriola", "Lucida Handwriting", "Monotype Corsiva";
+          font-family: "Handwriting - Dakota", "Bradley Hand", "Marker Felt", "Gabriola", "Lucida Handwriting", "Monotype Corsiva";
           font-size: 14px;
      }
 
@@ -18,8 +17,6 @@
           font-size: 72px;
           color: rgb(255,164,23);
           padding-left: 20px;
-/*        color: rgb(34,79,163); */
-/*        border-bottom: 3px solid rgb(255,164,23); */
          }
 
      .header {
@@ -71,3 +68,27 @@
                 vertical-align: middle;
         }
 
+/* smartphone, portrait */
+@media screen and (max-width: 479px) {
+  /* specific CSS */
+     h1 {
+          font-size: 36px;
+     }
+     .header {
+          margin-bottom: 3px;
+          padding: 0 0 0px 0px;
+     }
+     .contents {
+          margin: 5px 5px 5px 5px;
+          padding: 0 0 0 2px;
+          font-size: 18px;
+         }
+     .item {
+          font-size: 24px;
+          margin: 5px 10px 10px 5px;
+    }
+     .top_msg {
+         text-indent: 1em;
+     }
+    .logo { display: none; }
+}
