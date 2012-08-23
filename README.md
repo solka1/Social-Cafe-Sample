@@ -31,9 +31,7 @@ The quickest way to setup your actions and objects is as follows:
 
 ## Additional Resources
 
-Social Cafe iOS Version https://github.com/fbsamples/ios-social-cafe
-
-Social Cafe Android Version https://github.com/fbsamples/android-social-cafe
+Social Cafe Android and iOS versions https://github.com/fbsamples/social-cafe
 
 If you encounter any problems:
 
