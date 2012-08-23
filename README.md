@@ -31,6 +31,10 @@ The quickest way to setup your actions and objects is as follows:
 
 ## Additional Resources
 
+Social Cafe iOS Version https://github.com/fbsamples/ios-social-cafe
+
+Social Cafe Android Version https://github.com/fbsamples/android-social-cafe
+
 If you encounter any problems:
 
  * You can use the [Debug Tool](http://developers.facebook.com/tools/debug) under Related links to make sure you've set up the objects correctly by entering the url of the Open Graph pages.
