@@ -100,7 +100,7 @@
 	  if(isset($_POST['product'])) {
 		$idx = $_POST['product'];
 		try {
-			echo '<p>You are enjoying a ' . $products[$idx]['name'];
+			echo '<p>You ordered a ' . $products[$idx]['name'];
 			$story_id = publishCustomAction($facebook, $products[$idx]);
 			$me = $facebook->api("/me",'GET');
 			echo ' (story id: <a href="https://www.facebook.com/' . $me['username'] . '/activity/' . $story_id . '" target="_blank">' . $story_id . '</a> ).';
@@ -115,7 +115,7 @@
           }
 	?>
 
-  	<p>What would you like? </p>
+  	<p>What drink would you like to order?</p>
         <p style="font-size: 14px">(Choosing a drink will publish a story to your stream)</p>
      </div>
   
