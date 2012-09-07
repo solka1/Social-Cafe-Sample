@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright 2011 Facebook, Inc.
+* Copyright 2012 Facebook, Inc.
 *
 * Licensed under the Apache License, Version 2.0 (the "License"); you may
 * not use this file except in compliance with the License. You may obtain
@@ -15,26 +15,23 @@
 * under the License.
 */
 
-
-include_once('php-sdk/facebook.php');
-
+include_once(dirname(__FILE__).'/php-sdk/facebook.php');
 
 $app_url = "https://YOUR_APP_URL"; // no slash at the end, e.g. 'https://social-cafe.herokuapp.com'
 $app_id = "YOUR_APP_ID";
 $app_secret = "YOUR_APP_SECRET";
 $app_namespace = "YOUR_APP_NAMESPACE"; // no colon at the end, e.g. 'social-cafe'
 
-
-$facebook = new Facebook( array(
-                           'appId' => $app_id,
-                           'secret' => $app_secret,
-                         ));
+$facebook = new Facebook(array(
+  'appId' => $app_id,
+  'secret' => $app_secret,
+));
 
 $products = array(
   array(
     'url' => $app_url.'/latte.php',
     'name' => 'Cafe Latte',
-    'description' => 'Its hot',
+    'description' => "It's hot",
     'price' => 2.85,
   ),
   array(
