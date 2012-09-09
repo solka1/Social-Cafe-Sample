@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright 2011 Facebook, Inc.
+* Copyright 2012 Facebook, Inc.
 *
 * Licensed under the Apache License, Version 2.0 (the "License"); you may
 * not use this file except in compliance with the License. You may obtain
@@ -15,61 +15,66 @@
 * under the License.
 */
 
-  require_once('products.php');
+require_once(dirname(__FILE__).'/products.php');
 
 ?>
-<head prefix="og: http://ogp.me/ns# social-cafe: http://ogp.me/ns/apps/social-cafe#">
-    <title>Early Grey Tea</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-      <meta property="og:title" content="Earl Grey Tea" />
-      <meta property="og:determiner" content="an" />
-      <meta property="fb:app_id" content="<?php echo $app_id; ?>" />
-      <meta property="og:description" content="Fragrant Earl Grey Tea" />
-      <meta property="og:image" content="<?php echo $app_url; ?>/img/tea2x.png" />
-      <meta property="og:url" content="<?php echo $app_url; ?>/earlgrey.php" />
-      <meta property="og:type" content="<?php echo $app_namespace; ?>:beverage" />
-      <meta property="<?php echo $app_namespace; ?>:category" content="<?php echo $app_url; ?>/types/tea.php"> 
-                                                                
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel=StyleSheet href="css/sc.css" type="text/css" />
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# <?php echo $app_namespace; ?>: http://ogp.me/ns/apps/<?php echo $app_namespace; ?>#">
+  <meta charset="utf-8">
+  <title>Early Grey Tea</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Earl Grey Tea">
+  <meta property="og:site_name" content="Social Cafe">
+  <meta property="og:determiner" content="an">
+  <meta property="http://ogp.me/ns/fb#app_id" content="<?php echo $app_id; ?>">
+  <meta property="og:description" content="Fragrant Earl Grey Tea">
+  <meta property="og:image" content="<?php echo $app_url; ?>/img/tea2x.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="140">
+  <meta property="og:image:height" content="140">
+  <meta property="og:url" content="<?php echo $app_url; ?>/earlgrey.php">
+  <meta property="og:type" content="<?php echo $app_namespace; ?>:beverage">
+  <meta property="<?php echo $app_namespace; ?>:category" content="<?php echo $app_url; ?>/types/tea.php">
 
-  </head>
-  <body>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/sc.css">
+</head>
+<body>
   <div class="header" > 
-    <h1><a href="<?php echo $app_url; ?>"><img class="logo" src="img/cafe.png" width="135px" height="100px" /> Social Cafe</a></h1>
-    <div class="controls"><a href="<?php echo $facebook->getLoginUrl( array( 'scope' => 'publish_actions') ); ?>">Login</a> <a href="<?php echo $facebook->getLogoutUrl(); ?>">Logout</a></div>
+    <h1><a href="<?php echo $app_url; ?>"><img class="logo" alt="cafe" src="img/cafe.png" width="135" height="100"> Social Cafe</a></h1>
+    <div class="controls"><a href="<?php echo htmlspecialchars($facebook->getLoginUrl( array( 'scope' => 'publish_actions'))); ?>">Login</a> <a href="<?php echo htmlspecialchars($facebook->getLogoutUrl()); ?>">Logout</a></div>
   </div>
 
-    <div class="contents"> 
-      <div class="top_msg">
+  <div class="contents">
+    <div class="top_msg">
 
 <?php
     // Require unauthenticated users to login to view product but allow Facebook's Open Graph 
     // to retrieve the og properties  
    if(!$facebook->getUser()) {
-     echo '<a href="' . $facebook->getLoginUrl( array( 'scope' => 'publish_actions') ) . '">Login</a>';
+     echo '<a href="' . htmlspecialchars($facebook->getLoginUrl( array( 'scope' => 'publish_actions'))) . '">Login</a></div>';
    } else {
 ?>
 
 
-    <p>Earl Grey Tea</p>
-		<p>Would you like One? </p>
-        <p style="font-size: 14px">(Choosing a drink will publish a story to your stream)</p>
-      </div>
+      <p>Earl Grey Tea</p>
+	  <p>Would you like one?</p>
+      <p style="font-size: 14px">(Choosing a drink will publish a story to your stream)</p>
+    </div>
 
 
-	  <div class="item">
-		<a href="javascript:document.forms[0].submit();"><img src="img/tea.png" width="70px" /> Earl Grey Tea </a>
-	  </div>
+	<div class="item">
+      <a href="javascript:document.forms[0].submit();"><img alt="tea" src="img/tea.png" width="70" height="70"> Earl Grey Tea </a>
+    </div>
 
-     <br />
-     <p style="font-size: 14px">Images are licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> from flickr users: mattb4rd, kennymatic, jackbrodus.</p>
+    <p style="font-size: 14px;margin-top: 1em;">Images are licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> from flickr users: mattb4rd, kennymatic, jackbrodus.</p>
 
-	<form action="index.php" method="post" > <input name="product" type="hidden" value="2" /></form>
-	</div>
-     <?php } ?>
-
-  </body>
+	<form action="index.php" method="post"><input name="product" type="hidden" value="2"></form>
+<?php } ?>
+  </div>
+</body>
 </html>
 
 

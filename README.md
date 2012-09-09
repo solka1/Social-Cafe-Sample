@@ -27,7 +27,7 @@ The quickest way to setup your actions and objects is as follows:
    * Specify - People can [drink] a [beverage] - then complete the wizard without changing anything. This will create a Drink action and a Beverage object and link them together.
    * Click on Dashboard and create the BeverageCategory object type.
    * Click on the Beverage object type
-   * Under Object Properies, create 'category' and link it to 'BeverageCategory'
+   * Under Object Properties, create 'category' and link it to 'BeverageCategory'
 
 ## Additional Resources
 
@@ -39,9 +39,9 @@ If you encounter any problems:
 
  * You can see any errors Facebook returns by appending a "debug=1" to the url of the app.
 
- Also, note:
+Also, note:
 
-  * There are three Beverages in our app - Latte, Iced Mocha and Earl Grey Tea. The definitions of the beverages are defined in the og meta properties in the individual pages in the app.
+ * There are three Beverages in our app - Latte, Iced Mocha and Earl Grey Tea. The definitions of the beverages are defined in the og meta properties in the individual pages in the app.
 
  * There are three BeverageCategory categories in our app - Coffee, Tea and Soda. The definitions of the categories are defined in the og meta properties under the /types folder.
 
