@@ -70,8 +70,6 @@ require_once(dirname(__FILE__).'/products.php');
 	  <a href="javascript:document.forms[0].submit();"><img alt="latte" src="img/latte.png" width="70" height="70"> Cafe Latte </a>
 	</div>
 
-    <p style="font-size: 14px;margin-top:1em">Images are licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> from flickr users: mattb4rd, kennymatic, jackbrodus.</p>
-
     <form action="index.php" method="post" ><input name="product" type="hidden" value="0"></form>
 <?php } ?>
   </div>

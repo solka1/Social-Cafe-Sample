@@ -137,8 +137,6 @@ if ( isset($app_id) && $app_id === 'YOUR_APP_ID' ) {
       <a href="javascript:submitForm(2);"><img alt="tea" src="img/tea.png" width="70" height= "70"> Earl Grey Tea </a>
     </div>
 
-    <footer><p style="font-size:14px;margin-top:1em">Images are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> from flickr users: mattb4rd, kennymatic, jackbrodus.</p></footer>
-
     <form action="index.php<?php if(array_key_exists('debug',$_REQUEST)){echo '?debug=1';} ?>" method="post"> <input name="product" type="hidden" value="foobar"></form>
   </div></div>
 
