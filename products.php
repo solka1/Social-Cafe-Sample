@@ -47,3 +47,14 @@ $products = array(
     'price' => 2.55
   ),
 );
+
+/*
+ * When generating the login URL, remove logged_out=true from the
+ * current URL, otherwise users will not be able to buy a product
+ * after they login.
+ */
+function getLoginUrl($fb) {
+  $url = $fb->getLoginUrl( array( 'scope' => 'publish_actions'));
+  return preg_replace('/logged_out\%3Dtrue/e','',$url);
+}
+  
