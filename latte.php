@@ -33,8 +33,8 @@ require_once(dirname(__FILE__).'/products.php');
     <meta property="og:description" content="Smooth Milk Foam">
     <meta property="og:image" content="<?php echo $app_url; ?>/img/latte2x.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="140">
-    <meta property="og:image:height" content="140">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
     <meta property="og:url" content="<?php echo $app_url; ?>/latte.php">
     <meta property="og:type" content="<?php echo $app_namespace; ?>:beverage">
     <meta property="<?php echo $app_namespace; ?>:category" content="<?php echo $app_url; ?>/types/coffee.php">
