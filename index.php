@@ -131,7 +131,7 @@
     if(isset($_POST['product'])) {
       $idx = $_POST['product'];
       try {
-        echo '<p>You have registered for '.$products[$idx]['name'] 'classes';
+        echo '<p>You have registered for '.$products[$idx]['name'];
         $story_id = publishCustomAction($facebook, $products[$idx]);
         $me = $facebook->api('/me','GET');
         echo ' (story id: <a href="https://www.facebook.com/' . $me['username'] . '/activity/' . $story_id . '" target="_blank">' . $story_id . '</a> ).';
