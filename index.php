@@ -102,7 +102,7 @@
 
 
   <div class="header" >
-    <h1><a href="<?php echo $app_url; ?>">Social Cafe</a></h1>
+    <h1><a href="<?php echo $app_url; ?>">Silvi's Dance School</a></h1>
     <div class="controls">
 	  <?php
 	    if($facebook->getUser()) {

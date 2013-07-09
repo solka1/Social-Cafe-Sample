@@ -18,9 +18,9 @@
 include_once(dirname(__FILE__).'/php-sdk/facebook.php');
 
 $app_url = "https://YOUR_APP_URL"; // no slash at the end, e.g. 'https://social-cafe.herokuapp.com'
-$app_id = "YOUR_APP_ID";
-$app_secret = "YOUR_APP_SECRET";
-$app_namespace = "YOUR_APP_NAMESPACE"; // no colon at the end, e.g. 'social-cafe'
+$app_id = "189159657912197";
+$app_secret = "9a9fa225eeb93369b41edd4e1e3b6471";
+$app_namespace = "senapps"; // no colon at the end, e.g. 'social-cafe'
 
 $facebook = new Facebook(array(
   'appId' => $app_id,
@@ -30,20 +30,20 @@ $facebook = new Facebook(array(
 $products = array(
   array(
     'url' => $app_url.'/latte.php',
-    'name' => 'Cafe Latte',
-    'description' => "It's hot",
+    'name' => 'Beginners',
+    'description' => "New to Samba? What are you waiting for sign up now",
     'price' => 2.85,
   ),
   array(
     'url' => $app_url.'/icedmocha.php',
-    'name' => 'Iced Mocha',
-    'description' => 'Cold & Sweet',
+    'name' => 'Intermediate',
+    'description' => 'Feeling confident. Sign up and upgrade your rhythm today',
     'price' => 3.25
   ),
   array(
     'url' => $app_url.'/earlgrey.php',
-    'name' => 'Earl Grey Tea',
-    'description' => 'Smells amazing.',
+    'name' => 'Advamced',
+    'description' => 'You made it this far why stop now. Sign up for Advance today ',
     'price' => 2.55
   ),
 );
