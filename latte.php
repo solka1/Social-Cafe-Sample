@@ -92,7 +92,7 @@ require_once(dirname(__FILE__).'/products.php');
    </script>
 
   <div class="header" > 
-    <h1><a href="<?php echo $app_url; ?>">Social Cafe</a></h1>
+    <h1>Samba School of Dance</h1>
     <div class="controls">
       <?php
        if($facebook->getUser()) {
@@ -116,13 +116,13 @@ require_once(dirname(__FILE__).'/products.php');
      echo '<a href="' . htmlspecialchars($facebook->getLoginUrl( array( 'scope' => 'publish_actions'))) . '">Login</a>';
    } 
   ?>
-    <p>Cafe Latte</p>
-		<p>Would you like One? </p>
-        <p style="font-size: 14px">(Choosing a drink will publish a story to your stream)</p>
+    <p>Enrol now to Beginners</p>
+		<p>Would you like to start?</p>
+        <p style="font-size: 14px">(Please note Enrolling will publish to your feeds)</p>
       </div>
 
 	  <div class="item">
-		<a href="javascript:document.forms[0].submit();"><img src="img/latte.png" width="70px" /> Cafe Latte </a>
+		<a href="javascript:document.forms[0].submit();"><img src="img/sambadancer01.png" width="70px" /> Beginners Class</a>
 	  </div>
 
      <br />

@@ -102,7 +102,7 @@
 
 
   <div class="header" >
-    <h1><a href="<?php echo $app_url; ?>">Silvi's Dance School</a></h1>
+    <h1>Samba School of Dance for Facebook</h1>
     <div class="controls">
 	  <?php
 	    if($facebook->getUser()) {
@@ -146,20 +146,22 @@
     }
     ?>
 
-  	<p>What would you like? </p>
-        <p style="font-size: 12px">(Choosing a drink will publish a story to your stream)</p>
+  	<p>What would you like to do?</p>
+  	<p>Connect with friends today who also share the love for Samba!</p>
+  	<p>Watch tutorials purchase and register for world class lessons from world class traditional Samba dancers today </p>
+  	<p style="font-size: 12px">(Please note Enrolling will publish to your feeds)</p>
      </div>
   
      <div class="item">
-      <a href="javascript:submitForm(0);"><img src="img/latte.png" width="70px" height= "70px" /> Cafe Latte</a>
+      <a href="javascript:submitForm(0);"><img src="img/sambadancer01.png" width="70px" height= "70px" /> Beginners</a>
      </div>
   
      <div class="item">
-      <a href="javascript:submitForm(1);"><img src="img/mocha.png" width="70px" height= "70px" /> Iced Mocha </a>
+      <a href="javascript:submitForm(1);"><img src="img/sambadancer02.png" width="70px" height= "70px" /> Intermediate</a>
      </div>
   
      <div class="item">
-      <a href="javascript:submitForm(2);"><img src="img/tea.png" width="70px" height= "70px" /> Earl Grey Tea </a>
+      <a href="javascript:submitForm(2);"><img src="img/sambadancer03.jpg" width="70px" height= "70px" /> Advance</a>
      </div>
   
      <br />

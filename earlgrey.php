@@ -118,15 +118,14 @@ require_once(dirname(__FILE__).'/products.php');
     ?>
 
 
-    <p>Earl Grey Tea</p>
-    <p>Would you like one?</p>
-    <p style="font-size: 14px">(Choosing a drink will publish a story to your stream)</p>
-    </div>
+    <p>Enrol Now for Advance classes</p>
+    <p>You made it this far why stop now. Sign up for Advance today</p>
+    <p>(Please note Enrolling will publish to your feeds)</p>
+</div>
 
 
 	  <div class="item">
-		<a href="javascript:document.forms[0].submit();"><img src="img/tea.png" width="70px" /> Earl Grey Tea </a>
-	  </div>
+		<a href="javascript:document.forms[0].submit();"><img src="img/sambadancer03.jpg" width="70px" /> Advance Classes</a></div>
 
      <br />
 
