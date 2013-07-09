@@ -23,7 +23,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Welcome to the Social Cafe</title>
+    <title>Welcome The Samba School for Facebook</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 

@@ -29,7 +29,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Welcome to the Social Cafe</title>
+    <title>Welcome the Samba Dance School for Facebook</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -131,7 +131,7 @@
     if(isset($_POST['product'])) {
       $idx = $_POST['product'];
       try {
-        echo '<p>You are enjoying a '.$products[$idx]['name'];
+        echo '<p>You have registered for '.$products[$idx]['name'] 'classes';
         $story_id = publishCustomAction($facebook, $products[$idx]);
         $me = $facebook->api('/me','GET');
         echo ' (story id: <a href="https://www.facebook.com/' . $me['username'] . '/activity/' . $story_id . '" target="_blank">' . $story_id . '</a> ).';
@@ -142,14 +142,13 @@
         }
       }
     } else {
-          echo '<p>You have not chosen anything yet.</p>';
+          echo '<p>You have not chosen anything classes yet.</p>';
     }
     ?>
 
-  	<p>What would you like to do?</p>
   	<p>Connect with friends today who also share the love for Samba!</p>
-  	<p>Watch tutorials purchase and register for world class lessons from world class traditional Samba dancers today </p>
-  	<p style="font-size: 12px">(Please note Enrolling will publish to your feeds)</p>
+  	<p>Watch tutorials, purchase and register for world class lessons from authentic Samba instructors today! </p>
+  	<p style="font-size: 12px">(Please note Enroling will publish to your feeds)</p>
      </div>
   
      <div class="item">
