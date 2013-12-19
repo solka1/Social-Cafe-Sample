@@ -18,9 +18,9 @@
 include_once(dirname(__FILE__).'/php-sdk/facebook.php');
 
 $app_url = "http://sambadanceschool.herokuapp.com"; // no slash at the end, e.g. 'https://social-cafe.herokuapp.com'
-$app_id = "189159657912197";
-$app_secret = "9a9fa225eeb93369b41edd4e1e3b6471";
-$app_namespace = "senappz"; // no colon at the end, e.g. 'social-cafe'
+$app_id = "1440954526119607";
+$app_secret = "a031b7d3be38c3f02d8714ce95b71b48";
+$app_namespace = "sambateacher"; // no colon at the end, e.g. 'social-cafe'
 
 $facebook = new Facebook(array(
   'appId' => $app_id,
