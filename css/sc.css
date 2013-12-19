@@ -4,70 +4,101 @@
 
      body {
           position: relative;
-/*        background-color: rgb(223,188,154); */
           background-color: #FFFFFF;
           margin:0;
-          font-family: "Handwriting - Dakota", "Gabriola", "Lucida Handwriting", "Monotype Corsiva";
+          font-family: "Helvetica", "Sans Serif";
           font-size: 14px;
+          font-weight: bold;
      }
 
      h1 {
           position: relative;
           display: inline;
-          font-family: "Curlz MT", "Harrington","Apple Chancery", "Party LET", "Snell Roundhand", "Savoye LET", "Nueva Std", Script;
-          font-size: 72px;
-          color: rgb(255,164,23);
+          font-family: "Lucida Grande", "Helvetica", "Sans Serif";
+          font-weight: bold;
+          font-size: 32px;
+          color: #333333;
           padding-left: 20px;
-/*        color: rgb(34,79,163); */
-/*        border-bottom: 3px solid rgb(255,164,23); */
+          margin-left: 4em;
          }
 
      .header {
           position: relative;
           width: 100%;
-          background-color: rgb(107,60,9);
+          background-color: #FFFFFF;
+          margin-top: 10px;
           margin-bottom: 11px;
           padding: 0 0 10px 5px;
           border-bottom: 3px solid rgb(34,79,163);
      }
 
-     .left {
-          float: left;
-          width: 150px;
-          height: 100%;
-          clear: right;
-          padding: 0 10px 0 15px;
-      }
-
      .contents {
-          margin: 10px 10px 10px 75px;
+          margin: 10px 10px 5px 75px;
           padding: 0 0 0 25px;
-          font-size: 24px;
-         }
+          font-size: 18px;
+     }
 
      .top_msg {
          text-indent: 3em;
+         margin: 5px 5px 5px 5px;
      }
 
      .item {
           font-size: 32px;
-          margin: 35px 20px 55px 20px;
-    }
-     .item a:link { color: 0; text-decoration: none;}
+          margin: 5px 5px 5px 5px;
+     }
+
+     .item a:link { color: #333333; text-decoration: none;}
      
-     a:link { color: rgb(255,164,23); text-decoration: none; }
-     a:visited { color: rgb(255,164,23); text-decoration: none; }
-     a:hover { color: rgb(255,164,23); text-decoration: none; }
-     a:active { color: rgb(255,164,23); text-decoration: none; }
+     a:link { color: rgb(34,79,163); text-decoration: none; }
+     a:visited { color: rgb(34,79,163); text-decoration: none; }
+     a:hover { color: rgb(34,79,163); text-decoration: none; }
+     a:active { color: rgb(34,79,163); text-decoration: none; }
+
+     h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+	color: #333333;
+     }
 
      .controls {
            float: right;
-           margin: 10px 15px 20px 0;
-    }
+           margin: -5px 15px 20px 0;
+     }
+
      .controls a {
            color: rgb(34,79,163);
-}
-        img {
-                vertical-align: middle;
-        }
+     }
 
+     img {
+           vertical-align: middle;
+     }
+
+/* smartphone, portrait */
+@media screen and (max-width: 479px) {
+  /* specific CSS */
+     h1 {
+          font-size: 32px;
+          margin-left:20px;
+          padding-left:0;
+     }
+     .header {
+          margin-bottom: 3px;
+          padding: 0 0 0px 0px;
+     }
+     .contents {
+          margin: 5px 5px 5px 5px;
+          padding: 0 0 0 2px;
+          font-size: 12px;
+         }
+     .controls {
+           float: right;
+           margin: -12px 15px 20px 0;
+     }
+     .item {
+          font-size: 18px;
+          margin: 5px 10px 10px 5px;
+    }
+     .top_msg {
+         text-indent: 1em;
+     }
+    .logo { display: none; }
+}
